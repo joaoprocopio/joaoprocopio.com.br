@@ -5,11 +5,18 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: [
-    '@nuxt/eslint',
-  ],
+  compatibilityDate: "2024-08-10",
+
+  modules: ["@nuxt/eslint"],
 
   devtools: {
-    enabled: true
+    enabled: true,
+  },
+
+  eslint: {
+    checker: true,
+    config: {
+      stylistic: false,
+    },
   },
 })
