@@ -35,22 +35,6 @@ jobs:
       - name: Static HTML export
         run: pnpm generate
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v6
-        with:
-          name: deploy
-          path: ./.output/public
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v7
-        with:
-          name: deploy
-          path: ./.output/public
-
       - name: Publish to Cloudflare Pages
         id: deploy
         uses: cloudflare/wrangler-action@v3
