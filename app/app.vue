@@ -1,20 +1,10 @@
-<script setup lang="ts">
-import { ToastProvider, TooltipProvider, ConfigProvider } from 'reka-ui'
-</script>
-
 <template>
   <ColorScheme>
-    <ConfigProvider>
-      <TooltipProvider>
-        <ToastProvider>
-          <NuxtLoadingIndicator />
-          <NuxtRouteAnnouncer />
+    <NuxtLoadingIndicator />
+    <NuxtRouteAnnouncer />
 
-          <NuxtLayout>
-            <NuxtPage />
-          </NuxtLayout>
-        </ToastProvider>
-      </TooltipProvider>
-    </ConfigProvider>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </ColorScheme>
 </template>
