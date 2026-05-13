@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { links } from '~/constants/nav'
-
 const route = useRoute()
 
 const path = computed(() => route.path.replace('/writing', ''))
@@ -23,33 +21,12 @@ useSeoMeta({
           <a href="/">joão procópio</a>
         </h1>
       </hgroup>
-
-      <nav>
-        <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
-          <li v-for="link in links" class="inline">
-            <NuxtLink :href="link.href" class="underline underline-offset-4">{{
-              link.label
-            }}</NuxtLink>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <ContentRenderer v-if="writing" :value="writing" />
     <div v-else>404 not found</div>
-    <!-- TODO: empty -->
 
     <footer class="space-y-4">
-      <nav class="col-start-2 row-span-1">
-        <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
-          <li v-for="link in links" class="inline">
-            <NuxtLink :href="link.href" class="underline underline-offset-4">{{
-              link.label
-            }}</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-
       <p class="text-secondary-foreground">© 2026 joão procópio</p>
     </footer>
   </div>

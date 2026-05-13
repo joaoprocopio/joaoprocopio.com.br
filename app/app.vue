@@ -9,12 +9,10 @@ useHead({
 </script>
 
 <template>
-  <ColorScheme>
-    <NuxtLoadingIndicator />
-    <NuxtRouteAnnouncer />
+  <NuxtLoadingIndicator />
+  <NuxtRouteAnnouncer />
 
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </ColorScheme>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
