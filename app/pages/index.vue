@@ -34,10 +34,10 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
 </script>
 
 <template>
-  <div class="mx-auto my-12 max-w-2xl space-y-12 px-6">
+  <div class="mx-auto my-12 max-w-2xl space-y-16 px-6">
     <header class="space-y-2">
       <hgroup>
-        <h1 class="text-2xl font-medium">
+        <h1 class="text-2xl font-semibold">
           <a href="/">joão procópio</a>
         </h1>
       </hgroup>
@@ -52,7 +52,7 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </header>
 
     <div class="space-y-2">
-      <h2 class="text-xl font-medium">about</h2>
+      <h2 class="text-xl font-semibold">about</h2>
       <p>
         software engineer with 3+ years of experience, passionate about building
         distributed systems and solving complex business problems
@@ -60,12 +60,12 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </div>
 
     <div class="space-y-2">
-      <h2 class="text-xl font-medium">writing</h2>
+      <h2 class="text-xl font-semibold">writing</h2>
       <p>TODO</p>
     </div>
 
     <div class="space-y-2">
-      <h2 class="text-xl font-medium">find me</h2>
+      <h2 class="text-xl font-semibold">find me</h2>
       <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
         <li v-for="link in social" class="inline">
           <NuxtLink :href="link.href" target="_blank">{{
@@ -82,8 +82,19 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </div>
 
     <footer class="space-y-2">
-      <Cube class="text-muted-foreground size-64" />
-      <p>© 2026 joão procópio</p>
+      <Cube class="size-64" />
+
+      <div class="flex justify-between">
+        <p>© 2026 joão procópio</p>
+
+        <nav class="col-start-2 row-span-1">
+          <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
+            <li v-for="link in sitemap" class="inline">
+              <NuxtLink :href="link.href">{{ link.label }}</NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </div>
 </template>
