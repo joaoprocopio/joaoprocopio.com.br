@@ -10,9 +10,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   css: ['~/assets/css/theme.css'],
-  imports: {
-    dirs: ['~/lib/ui'],
-  },
   app: {
     head: {
       title: 'joão procópio',
