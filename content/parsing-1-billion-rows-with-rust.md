@@ -1,5 +1,5 @@
 ---
-written_at: 2024-05-13
+written_at: 2026-05-10
 cover:
   src: /cover/crab-with-a-knife.png
   alt: crab with a knife, referring the rust mascot — that is a crab

@@ -49,7 +49,9 @@ const { data: writing } = await useAsyncData(() =>
       <nav>
         <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
           <li v-for="link in sitemap" class="inline">
-            <NuxtLink :href="link.href">{{ link.label }}</NuxtLink>
+            <NuxtLink :href="link.href" class="underline underline-offset-4">{{
+              link.label
+            }}</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -104,14 +106,20 @@ const { data: writing } = await useAsyncData(() =>
       <div class="text-secondary-foreground">
         <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
           <li v-for="link in social" class="inline">
-            <NuxtLink :href="link.href" target="_blank">{{
-              link.label
-            }}</NuxtLink>
+            <NuxtLink
+              :href="link.href"
+              target="_blank"
+              class="underline underline-offset-4"
+              >{{ link.label }}</NuxtLink
+            >
           </li>
         </ul>
         <p>
           or mail me through
-          <NuxtLink :href="'mailto:' + mail" target="_blank">
+          <NuxtLink
+            :href="'mailto:' + mail"
+            target="_blank"
+            class="underline underline-offset-4">
             {{ mail }}
           </NuxtLink>
         </p>
@@ -120,12 +128,14 @@ const { data: writing } = await useAsyncData(() =>
 
     <footer class="space-y-4">
       <!-- TODO: ao trocar de tema isso buga -->
-      <Cube class="-ml-10 size-64" />
+      <Cube class="-ml-14 size-96" />
 
       <nav class="col-start-2 row-span-1">
         <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
           <li v-for="link in sitemap" class="inline">
-            <NuxtLink :href="link.href">{{ link.label }}</NuxtLink>
+            <NuxtLink :href="link.href" class="underline underline-offset-4">{{
+              link.label
+            }}</NuxtLink>
           </li>
         </ul>
       </nav>
