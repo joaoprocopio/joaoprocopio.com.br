@@ -1,3 +1,3 @@
 <template>
-  <div>abc</div>
+  <div class="container mx-auto">abc</div>
 </template>
