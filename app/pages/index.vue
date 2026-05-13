@@ -82,7 +82,7 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </div>
 
     <footer class="space-y-2">
-      <Cube />
+      <Cube class="text-muted-foreground size-64" />
       <p>© 2026 joão procópio</p>
     </footer>
   </div>

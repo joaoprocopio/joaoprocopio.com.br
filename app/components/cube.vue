@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
-
 type Point2 = readonly [number, number]
 type Point3 = readonly [number, number, number]
 
@@ -575,23 +573,5 @@ function getRelativeLuminance(
 </script>
 
 <template>
-  <canvas
-    ref="canvas"
-    aria-label="spinning ASCII cube"
-    class="ascii-cube text-muted-foreground"
-    role="img" />
+  <canvas ref="canvas" aria-label="spinning ASCII cube" role="img" />
 </template>
-
-<style scoped>
-.ascii-cube {
-  display: block;
-  width: min(100%, 20rem);
-  height: 12rem;
-}
-
-@media (max-width: 640px) {
-  .ascii-cube {
-    height: 10rem;
-  }
-}
-</style>
