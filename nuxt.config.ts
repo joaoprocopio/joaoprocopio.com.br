@@ -12,15 +12,19 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   css: ['~/assets/css/theme.css'],
-  app: {
-    head: {
-      title: 'joão procópio',
-    },
-  },
   typescript: {
     tsConfig: {
       compilerOptions: {
         skipLibCheck: true,
+      },
+    },
+  },
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['rust'],
+        },
       },
     },
   },

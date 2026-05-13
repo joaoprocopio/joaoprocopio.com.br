@@ -1,9 +1,16 @@
 <script setup lang="ts">
 const route = useRoute()
+
 const path = computed(() => route.path.replace('/writing', ''))
+
 const { data: writing } = await useAsyncData(() =>
   queryCollection('writing').path(path.value).first(),
 )
+
+useSeoMeta({
+  title: writing.value?.title,
+  description: writing.value?.description,
+})
 </script>
 
 <template>

@@ -11,7 +11,7 @@ const THRESHOLDS = [
 
 export function formatDate(date: Date) {
   const dtf = new Intl.DateTimeFormat(DEFAULT_LOCALE, {
-    dateStyle: 'full',
+    dateStyle: 'medium',
   })
 
   return dtf.format(date)

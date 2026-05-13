@@ -8,3 +8,12 @@ cover:
 # parsing 1 billion rows with rust
 
 modern cpus are extremely fast, i'll guide you through this performance squeezing article
+
+::cube
+::
+
+```rust
+fn main() -> Result<i32> {
+  Ok(1)
+}
+```
