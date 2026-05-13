@@ -9,7 +9,7 @@ type Glyph = {
 
 const canvas = ref<HTMLCanvasElement | null>(null)
 
-const CELL_WIDTH = 7
+const CELL_WIDTH = 6
 const CELL_HEIGHT = 12
 const FONT_SIZE = 12
 const GLYPH_SCALE = 4

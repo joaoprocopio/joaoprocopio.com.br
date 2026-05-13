@@ -82,19 +82,17 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </div>
 
     <footer class="space-y-2">
-      <Cube class="size-64" />
+      <Cube class="-ml-10 size-64" />
 
-      <div class="flex justify-between">
-        <p>© 2026 joão procópio</p>
+      <nav class="col-start-2 row-span-1">
+        <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
+          <li v-for="link in sitemap" class="inline">
+            <NuxtLink :href="link.href">{{ link.label }}</NuxtLink>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="col-start-2 row-span-1">
-          <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
-            <li v-for="link in sitemap" class="inline">
-              <NuxtLink :href="link.href">{{ link.label }}</NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <p>© 2026 joão procópio</p>
     </footer>
   </div>
 </template>
