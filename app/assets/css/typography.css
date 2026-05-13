@@ -32,10 +32,6 @@
   --text-4xs--letter-spacing: 0.006em;
 }
 
-:root {
-  --font-geist-mono: 'Geist Mono', monospace;
-}
-
-@theme inline {
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-mono: 'Geist Mono', monospace;
 }

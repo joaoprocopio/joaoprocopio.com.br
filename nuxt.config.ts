@@ -6,10 +6,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
     '@nuxt/eslint',
-    '@nuxt/icon',
     '@nuxt/fonts',
     '@vueuse/nuxt',
-    'shadcn-nuxt',
   ],
   css: ['~/assets/css/theme.css'],
   imports: {
@@ -34,16 +32,13 @@ export default defineNuxtConfig({
       },
     },
   },
-  icon: {
-    mode: 'svg',
-  },
-  shadcn: {
-    componentDir: '~/lib/ui/components',
-    prefix: '',
-  },
   colorMode: {
     storage: 'cookie',
     disableTransition: true,
+  },
+  fonts: {
+    throwOnError: true,
+    processCSSVariables: true,
   },
   vite: {
     plugins: [tailwindcss() as any],
