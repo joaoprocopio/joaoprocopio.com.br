@@ -66,7 +66,15 @@ const { data: writing } = await useAsyncData(() =>
 
     <div class="space-y-4">
       <h2 class="text-xl font-medium">writing</h2>
-      <NuxtLink v-for="post in writing" class="flex gap-4">
+      <NuxtLink
+        class="flex gap-4"
+        v-for="post in writing"
+        :to="{
+          name: 'writing-slug',
+          params: {
+            slug: post.stem,
+          },
+        }">
         <NuxtImg
           class="aspect-3/2 h-40 object-cover"
           :src="post.cover.src"
@@ -76,9 +84,11 @@ const { data: writing } = await useAsyncData(() =>
           <p class="font-medium">
             {{ post.title }}
           </p>
+
           <p class="text-secondary-foreground text-xs">
             {{ post.description }}
           </p>
+
           <p
             class="text-secondary-foreground text-xs"
             :title="formatDate(toDate(post.written_at))">

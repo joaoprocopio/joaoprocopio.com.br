@@ -4,7 +4,7 @@ export default defineContentConfig({
   collections: {
     writing: defineCollection({
       type: 'page',
-      source: '*',
+      source: '**/*',
       schema: z.object({
         written_at: z.date(),
         cover: z.object({
