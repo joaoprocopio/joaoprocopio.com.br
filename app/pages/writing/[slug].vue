@@ -35,7 +35,9 @@ useSeoMeta({
       </nav>
     </header>
 
-    <ContentRenderer :value="writing!" />
+    <ContentRenderer v-if="writing" :value="writing" />
+    <div v-else>404 not found</div>
+    <!-- TODO: empty -->
 
     <footer class="space-y-4">
       <nav class="col-start-2 row-span-1">
