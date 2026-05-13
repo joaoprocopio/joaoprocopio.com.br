@@ -6,9 +6,7 @@ export default defineContentConfig({
       type: 'page',
       source: '*',
       schema: z.object({
-        authors: z.array(z.string()),
         written_at: z.date(),
-        summary: z.string(),
         cover: z.object({
           src: z.string(),
           alt: z.string(),
