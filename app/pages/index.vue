@@ -31,10 +31,14 @@ const social: Link[] = [
 ]
 
 const mail: string = 'joaovitorcprocopio@gmail.com'
+
+const writing = await useAsyncData(() => queryCollection('writing').all())
 </script>
 
 <template>
   <div class="mx-auto my-12 max-w-2xl space-y-16 px-6">
+    {{ writing.data }}
+
     <header class="space-y-2">
       <hgroup>
         <h1 class="text-2xl font-medium">
