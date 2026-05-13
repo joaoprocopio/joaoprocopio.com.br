@@ -4,7 +4,7 @@ export default defineContentConfig({
   collections: {
     writing: defineCollection({
       type: 'page',
-      source: '**/*',
+      source: '*',
     }),
   },
 })

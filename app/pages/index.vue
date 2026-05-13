@@ -37,7 +37,7 @@ const writing = await useAsyncData(() => queryCollection('writing').all())
 
 <template>
   <div class="mx-auto my-12 max-w-2xl space-y-16 px-6">
-    {{ writing.data }}
+    <pre>{{ writing.data }}</pre>
 
     <header class="space-y-2">
       <hgroup>

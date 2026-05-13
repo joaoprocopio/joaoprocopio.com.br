@@ -7,7 +7,7 @@
     "node": ">=24.11.0"
   },
   "scripts": {
-    "purge": "git clean -xdf .nuxt node_modules dist && pnpm store prune --force && pnpm cache delete",
+    "purge": "git clean -xdf node_modules .nuxt .output .data dist && pnpm store prune --force && pnpm cache delete",
     "postinstall": "nuxt prepare",
     "prepare": "nuxt prepare",
     "build": "nuxt build",
