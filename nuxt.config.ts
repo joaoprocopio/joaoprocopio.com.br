@@ -28,13 +28,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  eslint: {
-    config: {
-      nuxt: {
-        sortConfigKeys: true,
-      },
-    },
-  },
   colorMode: {
     storage: 'cookie',
     disableTransition: true,
@@ -46,12 +39,7 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    plugins: [tailwindcss() as any],
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
+    plugins: [tailwindcss()],
   },
   experimental: {
     typedPages: true,
