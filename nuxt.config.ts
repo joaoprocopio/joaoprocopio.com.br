@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Work in Progress...',
+      title: 'joão procópio',
     },
   },
   typescript: {
