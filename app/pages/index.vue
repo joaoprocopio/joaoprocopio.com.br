@@ -10,8 +10,8 @@ const sitemap: Link[] = [
     href: '/',
   },
   {
-    label: 'blog',
-    href: '/blog',
+    label: 'writing',
+    href: '/writing',
   },
   {
     label: 'projects',
@@ -37,7 +37,7 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
   <div class="mx-auto my-12 max-w-2xl space-y-16 px-6">
     <header class="space-y-2">
       <hgroup>
-        <h1 class="text-2xl font-semibold">
+        <h1 class="text-2xl font-medium">
           <a href="/">joão procópio</a>
         </h1>
       </hgroup>
@@ -52,7 +52,7 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </header>
 
     <div class="space-y-2">
-      <h2 class="text-xl font-semibold">about</h2>
+      <h2 class="text-xl font-medium">about</h2>
       <p>
         software engineer with 3+ years of experience, passionate about building
         distributed systems and solving complex business problems
@@ -60,12 +60,12 @@ const mail: string = 'joaovitorcprocopio@gmail.com'
     </div>
 
     <div class="space-y-2">
-      <h2 class="text-xl font-semibold">writing</h2>
+      <h2 class="text-xl font-medium">writing</h2>
       <p>TODO</p>
     </div>
 
     <div class="space-y-2">
-      <h2 class="text-xl font-semibold">find me</h2>
+      <h2 class="text-xl font-medium">find me</h2>
       <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
         <li v-for="link in social" class="inline">
           <NuxtLink :href="link.href" target="_blank">{{
