@@ -2,18 +2,26 @@
 @import 'tw-animate-css';
 
 @import './purge.css';
-@import './breakpoints.css';
+@import './sizing.css';
 @import './typography.css';
 @import './colors/gray.css';
 @import './colors/red.css';
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --radius: 0.25rem;
+  --blur: 1rem;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+}
+
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -48,8 +56,6 @@
 }
 
 :root {
-  --radius: 0.25rem;
-
   --background: var(--gray-1);
   --foreground: var(--gray-12);
   --card: var(--gray-2);
