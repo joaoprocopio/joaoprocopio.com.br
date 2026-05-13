@@ -1,6 +1,9 @@
 <template>
-  <div class="mx-auto my-12 max-w-3xl space-y-6 px-6">
-    <a class="block text-xl font-bold" href="/">joão procópio</a>
+  <div class="mx-auto my-12 max-w-3xl space-y-8 px-6">
+    <div class="space-y-2">
+      <a class="block text-xl font-semibold" href="/">joão procópio</a>
+      <p>home / blog / projects</p>
+    </div>
 
     <p>
       lorem ipsum dolor sit amet consectetur, adipisicing elit. maiores dicta

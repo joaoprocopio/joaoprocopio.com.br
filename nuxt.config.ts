@@ -37,6 +37,11 @@ export default defineNuxtConfig({
     disableTransition: true,
   },
   fonts: {
+    defaults: {
+      preload: true,
+      weights: [400, 500, 600, 700],
+    },
+
     throwOnError: true,
     processCSSVariables: true,
   },
