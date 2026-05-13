@@ -4,7 +4,7 @@ type Link = {
   href: string
 }
 
-const sitemap: Link[] = [
+const sitemap = [
   {
     label: 'home',
     href: '/',
@@ -17,9 +17,9 @@ const sitemap: Link[] = [
     label: 'projects',
     href: '/projects',
   },
-]
+] as const satisfies Link[]
 
-const social: Link[] = [
+const social = [
   {
     label: 'linkedin',
     href: 'https://www.linkedin.com/in/joao-procopio/',
@@ -28,9 +28,9 @@ const social: Link[] = [
     label: 'github',
     href: 'https://github.com/joaoprocopio/',
   },
-]
+] as const satisfies Link[]
 
-const mail: string = 'joaovitorcprocopio@gmail.com'
+const mail = 'joaovitorcprocopio@gmail.com' as const
 
 const writing = await useAsyncData(() => queryCollection('writing').all())
 </script>
@@ -86,6 +86,7 @@ const writing = await useAsyncData(() => queryCollection('writing').all())
     </div>
 
     <footer class="space-y-2">
+      <!-- TODO: ao trocar de tema isso buga -->
       <Cube class="-ml-10 size-64" />
 
       <nav class="col-start-2 row-span-1">
