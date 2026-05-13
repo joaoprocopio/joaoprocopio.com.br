@@ -41,9 +41,6 @@ export default defineNuxtConfig({
       preload: true,
       weights: [400, 500, 600, 700],
     },
-
-    throwOnError: true,
-    processCSSVariables: true,
   },
   vite: {
     plugins: [tailwindcss() as any],

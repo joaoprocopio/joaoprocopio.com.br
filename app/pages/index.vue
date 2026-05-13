@@ -1,22 +1,41 @@
+<script setup lang="ts">
+type Link = {
+  label: string
+  href: string
+}
+
+const links: Link[] = [
+  {
+    label: 'home',
+    href: '/',
+  },
+  {
+    label: 'blog',
+    href: '/blog',
+  },
+  {
+    label: 'projects',
+    href: '/projects',
+  },
+]
+</script>
+
 <template>
   <div class="mx-auto my-12 max-w-3xl space-y-8 px-6">
     <div class="space-y-2">
-      <a class="block text-xl font-semibold" href="/">joão procópio</a>
-      <p>home / blog / projects</p>
+      <hgroup>
+        <h1 class="text-2xl font-semibold">
+          <a href="/">joão procópio</a>
+        </h1>
+      </hgroup>
+
+      <ul class="[&>li+li::before]:mx-2 [&>li+li::before]:content-['/']">
+        <li v-for="link in links" class="inline">
+          <a :href="link.href">{{ link.label }}</a>
+        </li>
+      </ul>
     </div>
 
-    <p>
-      lorem ipsum dolor sit amet consectetur, adipisicing elit. maiores dicta
-      veritatis modi molestiae asperiores? porro corporis, nulla saepe dolore
-      expedita quidem velit mollitia reprehenderit quasi aliquam nam sed
-      pariatur distinctio!
-    </p>
-
-    <p>
-      lorem, ipsum dolor sit amet consectetur adipisicing elit. omnis suscipit
-      facere dicta necessitatibus fuga modi in est fugiat. omnis accusamus
-      molestias deserunt doloribus provident corrupti enim unde, architecto
-      culpa rem.
-    </p>
+    <div></div>
   </div>
 </template>

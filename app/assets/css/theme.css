@@ -23,6 +23,13 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
   --color-border: var(--border);
   --color-ring: var(--ring);
   --color-outline: var(--outline);
@@ -31,6 +38,13 @@
 :root {
   --background: var(--gray-2);
   --foreground: var(--gray-12);
+
+  --secondary: var(--gray-3);
+  --secondary-foreground: var(--gray-11);
+
+  --muted: var(--gray-3);
+  --muted-foreground: var(--gray-10);
+
   --border: var(--gray-5);
   --ring: var(--gray-7);
   --outline: var(--gray-7);
@@ -39,6 +53,13 @@
 .dark {
   --background: var(--gray-2);
   --foreground: var(--gray-12);
+
+  --secondary: var(--gray-3);
+  --secondary-foreground: var(--gray-11);
+
+  --muted: var(--gray-3);
+  --muted-foreground: var(--gray-10);
+
   --border: var(--gray-4);
   --ring: var(--gray-7);
   --outline: var(--gray-7);
