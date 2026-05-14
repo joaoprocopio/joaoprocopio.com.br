@@ -31,12 +31,7 @@ const { data: writing } = await useAsyncData(() =>
       <NuxtLink
         class="flex gap-4"
         v-for="post in writing"
-        :to="{
-          name: 'writing-slug',
-          params: {
-            slug: post.stem,
-          },
-        }">
+        :to="{ name: 'writing-slug', params: { slug: post.stem } }">
         <NuxtImg
           class="aspect-3/2 h-40 object-cover"
           :src="post.cover.src"
