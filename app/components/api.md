@@ -1,0 +1,5 @@
+- https://www.figma.com/blog/how-figmas-multiplayer-technology-works/
+- https://www.gingerbill.org/article/2026/05/03/signed-by-default/
+- https://www.kooslooijesteijn.net/blog/sidenotes-without-js
+- https://jakearchibald.com/2025/give-footnotes-the-boot/
+- https://shkspr.mobi/blog/2020/07/usability-of-footnotes/

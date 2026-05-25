@@ -36,7 +36,7 @@
 }
 
 :root {
-  --background: var(--gray-2);
+  --background: var(--gray-1);
   --foreground: var(--gray-12);
 
   --secondary: var(--gray-3);
@@ -51,7 +51,7 @@
 }
 
 .dark {
-  --background: var(--gray-2);
+  --background: var(--gray-1);
   --foreground: var(--gray-12);
 
   --secondary: var(--gray-3);
