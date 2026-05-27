@@ -154,3 +154,6 @@ node_modules
 # System files
 
 # End of https://www.toptal.com/developers/gitignore/api/nuxtjs,node
+
+# Astro
+.astro/
